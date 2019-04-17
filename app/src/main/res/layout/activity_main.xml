@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutMap"
+        android:layout_centerHorizontal="true"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:background="@drawable/map">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutPointer"
+            android:layout_margin="42dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp">
+
+            <View
+                android:id="@+id/viewPointer"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/pointer" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="140dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BSSID :"
+                android:textAlignment="center"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/editTextBSSID"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ac:67:06:dd:94:b8"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dBm :"
+                android:textAlignment="center"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/editTextDBm"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/buttonLocate"
+                android:layout_marginLeft="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Locate"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="X :"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                android:layout_weight="1"/>
+
+
+            <Button
+                android:id="@+id/buttonDecreaseX"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/textViewXValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/buttonIncreaseX"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Y :"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                android:layout_weight="1"/>
+
+
+            <Button
+                android:id="@+id/buttonDecreaseY"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/textViewYValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/buttonIncreaseY"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
