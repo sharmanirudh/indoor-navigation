@@ -31,11 +31,44 @@
     </RelativeLayout>
 
     <LinearLayout
-        android:layout_marginBottom="140dp"
+        android:layout_marginBottom="30dp"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="start"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SSID :"
+                android:textAlignment="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/textViewSSID"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp"/>
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_marginStart="30dp"
@@ -51,18 +84,17 @@
                 android:textAlignment="center"
                 android:textSize="18sp"/>
 
-            <EditText
-                android:id="@+id/editTextBSSID"
+            <TextView
+                android:id="@+id/textViewBSSID"
                 android:layout_marginStart="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ac:67:06:dd:94:b8"
+                android:text=""
                 android:textSize="18sp"/>
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="10dp"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_width="match_parent"
@@ -76,115 +108,63 @@
                 android:textAlignment="center"
                 android:textSize="18sp"/>
 
-            <EditText
-                android:id="@+id/editTextDBm"
+            <TextView
+                android:id="@+id/textViewDBm"
                 android:layout_marginStart="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="50"
-                android:textSize="18sp"/>
-
-            <Button
-                android:id="@+id/buttonLocate"
-                android:layout_marginLeft="40dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Locate"
+                android:text=""
                 android:textSize="18sp"/>
 
         </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginBottom="20dp"
-        android:layout_alignParentBottom="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
 
         <LinearLayout
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="4">
+            android:orientation="horizontal">
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="X :"
                 android:textAlignment="textStart"
-                android:textSize="18sp"
-                android:layout_weight="1"/>
-
-
-            <Button
-                android:id="@+id/buttonDecreaseX"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="-"
-                android:layout_weight="1"/>
+                android:textSize="18sp"/>
 
             <TextView
                 android:id="@+id/textViewXValue"
-                android:layout_width="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1"
+                android:text=""
                 android:textAlignment="center"
-                android:textSize="18sp"
-                android:layout_weight="1"/>
-
-            <Button
-                android:id="@+id/buttonIncreaseX"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="+"
-                android:layout_weight="1"/>
+                android:textSize="18sp"/>
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="10dp"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="4">
+            android:orientation="horizontal">
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Y :"
                 android:textAlignment="textStart"
-                android:textSize="18sp"
-                android:layout_weight="1"/>
-
-
-            <Button
-                android:id="@+id/buttonDecreaseY"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="-"
-                android:layout_weight="1"/>
+                android:textSize="18sp"/>
 
             <TextView
                 android:id="@+id/textViewYValue"
-                android:layout_width="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1"
+                android:text=""
                 android:textAlignment="center"
-                android:textSize="18sp"
-                android:layout_weight="1"/>
-
-            <Button
-                android:id="@+id/buttonIncreaseY"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="+"
-                android:layout_weight="1"/>
+                android:textSize="18sp"/>
 
         </LinearLayout>
 
