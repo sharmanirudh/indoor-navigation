@@ -3,27 +3,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/colorBackground">
 
     <RelativeLayout
         android:id="@+id/relativeLayoutMap"
+        android:layout_marginTop="40dp"
         android:layout_centerHorizontal="true"
         android:layout_width="400dp"
-        android:layout_height="400dp"
-        android:background="@drawable/map">
+        android:layout_height="322dp"
+        android:background="@drawable/map2">
 
         <RelativeLayout
             android:id="@+id/relativeLayoutPointer"
-            android:layout_margin="42dp"
-            android:layout_width="20dp"
-            android:layout_height="20dp">
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="102dp"
+            android:layout_marginBottom="55dp"
+            android:layout_marginStart="45dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp">
 
             <View
                 android:id="@+id/viewPointer"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentEnd="true"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
                 android:background="@drawable/pointer" />
 
         </RelativeLayout>
@@ -43,8 +50,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_gradient_style"
             android:text="start"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/google_sans_bold"
+            android:textColor="@color/colorText" />
 
         <LinearLayout
             android:layout_marginStart="30dp"
@@ -57,6 +68,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="SSID :"
+                android:textColor="@color/colorText"
                 android:textAlignment="center"
                 android:textSize="18sp"/>
 
@@ -66,6 +78,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=""
+                android:textColor="@color/colorSideText"
                 android:textSize="18sp"/>
 
         </LinearLayout>
@@ -81,6 +94,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="BSSID :"
+                android:textColor="@color/colorText"
                 android:textAlignment="center"
                 android:textSize="18sp"/>
 
@@ -90,6 +104,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=""
+                android:textColor="@color/colorSideText"
                 android:textSize="18sp"/>
 
         </LinearLayout>
@@ -105,6 +120,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="dBm :"
+                android:textColor="@color/colorText"
                 android:textAlignment="center"
                 android:textSize="18sp"/>
 
@@ -114,6 +130,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=""
+                android:textColor="@color/colorSideText"
                 android:textSize="18sp"/>
 
         </LinearLayout>
@@ -129,6 +146,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="X :"
+                android:textColor="@color/colorText"
                 android:textAlignment="textStart"
                 android:textSize="18sp"/>
 
@@ -138,6 +156,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=""
+                android:textColor="@color/colorSideText"
                 android:textAlignment="center"
                 android:textSize="18sp"/>
 
@@ -154,6 +173,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Y :"
+                android:textColor="@color/colorText"
                 android:textAlignment="textStart"
                 android:textSize="18sp"/>
 
@@ -163,6 +183,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=""
+                android:textColor="@color/colorSideText"
                 android:textAlignment="center"
                 android:textSize="18sp"/>
 
